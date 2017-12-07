@@ -1,4 +1,3 @@
-
 clear all;
 
 % SUBJECTS NUMBERS GO HERE (WITHOUT _CB)
@@ -9,12 +8,10 @@ formatSpec = ('%f %f %f %f %f %f');
 % CURRENT WORKING DIRECTORY > SPECIFIES WER SUBJECTS' FOLDERS ARE
 cwd = '/Users/delfin/Documents/Research/NORMENT/Pharma_Ny/Ariprip/'; % Main directory
 
-
 for i=1:numel(subjects);
 
 % VARIABLE NAME OF RP TEXTFILE
 rp = ['rp_Rew' subjects{i} '#001.txt'];
-  
     
 cd(cwd)
 savespec = [cwd, subjects{i}, '/rp'];
