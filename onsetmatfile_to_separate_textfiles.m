@@ -1,10 +1,11 @@
 clear all;
 
-% CURRENT WORKING DIRECTORY > ONSETS_{SUBJNUM}.MAT ARE PLACED HERE 
-cwd = ('/Users/delfin/Documents/Research/NORMENT/Onsets/');
+% current working directory, 'onsets_{subjectnumber}.mat' are placed here
+cwd = ('/Users/delfin/ ... /Onsets/');
 
-% REDO WITH COMPLETE LIST OF SUJECTS
-subjects={'811' '816' '817' '819' '820' '830' '832' '833' '839' '840' '844' '847' '849' '855' '856'};
+% NOTE TO SELF:
+% redo with complete list of subjects
+subjects = {'811' '816' '817' '819' '820' '830' '832' '833' '839' '840' '844' '847' '849' '855' '856'};
 
 formatSpec = '%8.6f\n';
 cd(cwd)
@@ -29,4 +30,3 @@ fprintf(neut,formatSpec,sots{1,3});
 fclose(neut);
 
 end
-
