@@ -6,12 +6,12 @@
 %   RP regressors are in one .mat file for each subject,
 %   see onset and RP scripts for instructions on how to create these files.
 %
-%   This scripts builds the fMRI model design, estimates the model,
+%   This script creates the fMRI model design, estimates the model,
 %   and creates two contrasts for each subject:
 %   CON_1 is motivation > neutral,
 %   CON_2 is neutral > motivation.
 %
-%   NOTE. Motivation used is NEGATIVE motivation only,
+%   NOTE. Motivation in this script is NEGATIVE motivation only,
 %   see methods section in manuscript.
 % 
 % ================================================================================
@@ -171,4 +171,4 @@ matlabbatch{3}.spm.stats.con.delete = 0;
 
 spm_jobman('run',matlabbatch);
 
-    end
+end
