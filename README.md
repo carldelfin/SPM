@@ -1,2 +1,2 @@
 # SPM
-Just a repository for keeping some SPM scripts I use for fMRI analysis.
+A repository for storing SPM scripts used in fMRI analysis.
