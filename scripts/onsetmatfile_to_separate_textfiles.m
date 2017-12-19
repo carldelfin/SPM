@@ -10,7 +10,7 @@ subjects = {'811' '816' '817' '819' '820' '830' '832' '833' '839' '840' '844' '8
 formatSpec = '%8.6f\n';
 cd(cwd)
 
-for i=1:numel(subjects)
+for i = 1:numel(subjects)
     
 matFileName = ['onsets_' subjects{i} '.mat'];
 load(matFileName);
